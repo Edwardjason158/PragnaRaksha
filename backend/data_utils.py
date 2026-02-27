@@ -20,7 +20,7 @@ AREA_NAMES = ["Banjara Hills", "Secunderabad", "Gachibowli", "Madhapur", "Ameerp
 
 def generate_mock_data(n=1000):
     data = []
-    start_date = datetime(2024, 1, 1)
+    now = datetime.now()
     
     # Coordinates centered around Hyderabad, India
     center_lat, center_lon = 17.3850, 78.4867
@@ -28,7 +28,8 @@ def generate_mock_data(n=1000):
     for _ in range(n):
         lat = center_lat + random.uniform(-0.15, 0.15)
         lon = center_lon + random.uniform(-0.15, 0.15)
-        crime_date = start_date + timedelta(days=random.randint(0, 400))
+        # Use last 12 months so dashboard always shows live data
+        crime_date = now - timedelta(days=random.randint(0, 365))
         crime_time = datetime.strptime(f"{random.randint(0, 23)}:{random.randint(0, 59)}", "%H:%M").time()
         
         crime_type = random.choice(CRIME_TYPES)

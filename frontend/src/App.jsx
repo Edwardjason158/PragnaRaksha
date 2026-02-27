@@ -5,6 +5,7 @@ import HeatmapView from './components/HeatmapView';
 import PatrolRouteView from './components/PatrolRouteView';
 import UploadView from './components/UploadView';
 import XAIView from './components/XAIView';
+import AnalyticsView from './components/AnalyticsView';
 import { Bell, Search, User } from 'lucide-react';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
             case 'dashboard': return <Dashboard />;
             case 'heatmap': return <HeatmapView />;
             case 'patrol': return <PatrolRouteView />;
+            case 'analytics': return <AnalyticsView />;
             case 'upload': return <UploadView />;
             case 'xai': return <XAIView />;
             default: return <Dashboard />;

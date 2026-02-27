@@ -32,25 +32,28 @@ ChartJS.register(
 const Dashboard = () => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [range, setRange] = useState('12m');
+
+    const fetchTrends = async () => {
+        setLoading(true);
+        try {
+            const res = await axios.get(`/api/trends?range=${range}`);
+            setData(res.data);
+        } catch (err) {
+            console.error(err);
+        } finally {
+            setLoading(false);
+        }
+    };
 
     useEffect(() => {
-        const fetchTrends = async () => {
-            try {
-                const res = await axios.get('/api/trends');
-                setData(res.data);
-            } catch (err) {
-                console.error(err);
-            } finally {
-                setLoading(false);
-            }
-        };
         fetchTrends();
-    }, []);
+    }, [range]);
 
     if (loading || !data) return <div className="flex items-center justify-center h-full">Loading Engine...</div>;
 
     const lineData = {
-        labels: data.monthly_trends.map(t => t.crime_date),
+        labels: data.monthly_trends.map(t => t.label),
         datasets: [{
             label: 'Overall Crime Incidence',
             data: data.monthly_trends.map(t => t.count),
@@ -120,8 +123,18 @@ const Dashboard = () => {
                     <div className="flex items-center justify-between mb-6">
                         <h3 className="font-bold text-lg">Predictive Temporal Trends</h3>
                         <div className="flex gap-2">
-                            <button className="px-3 py-1 rounded-lg bg-primary/20 text-primary text-xs font-bold">12 Months</button>
-                            <button className="px-3 py-1 rounded-lg hover:bg-white/5 text-zinc-400 text-xs font-bold transition-all">30 Days</button>
+                            <button
+                                onClick={() => setRange('12m')}
+                                className={`px-3 py-1 rounded-lg transition-all ${range === '12m' ? 'bg-primary text-white' : 'bg-primary/10 text-primary hover:bg-primary/20'} text-xs font-bold`}
+                            >
+                                12 Months
+                            </button>
+                            <button
+                                onClick={() => setRange('30d')}
+                                className={`px-3 py-1 rounded-lg transition-all ${range === '30d' ? 'bg-primary text-white' : 'bg-primary/10 text-primary hover:bg-primary/20'} text-xs font-bold`}
+                            >
+                                30 Days
+                            </button>
                         </div>
                     </div>
                     <div className="flex-1 min-h-0">

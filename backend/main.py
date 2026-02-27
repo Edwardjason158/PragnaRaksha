@@ -6,7 +6,7 @@ import pandas as pd
 import io
 import json
 import redis
-from datetime import datetime, time
+from datetime import datetime, time, timedelta
 from typing import List, Optional
 
 from database import engine, Base, get_db, settings
@@ -120,7 +120,7 @@ def get_heatmap():
     if cached: return json.loads(cached)
     
     crimes = store.get_crimes()
-    data = [{"lat": c["latitude"], "lon": c["longitude"], "intensity": 0.8} for c in crimes]
+    data = [{"lat": c["latitude"], "lon": c["longitude"], "intensity": 0.8, "type": c["crime_type"]} for c in crimes]
     
     cache.setex("heatmap_data", 300, json.dumps(data))
     return data
@@ -159,7 +159,7 @@ def get_patrol_route(n_hotspots: int = 5, n_officers: int = 1):
     return RoutingEngine.optimize_patrol(hotspots, n_officers=n_officers)
 
 @app.get("/api/trends")
-def get_trends():
+def get_trends(range: str = "12m"):
     df = pd.DataFrame(store.get_crimes())
     if df.empty:
         return {
@@ -167,18 +167,32 @@ def get_trends():
             "category_distribution": {},
             "total_incidents": 0
         }
+    
     df['crime_date'] = pd.to_datetime(df['crime_date'])
+    now = datetime.now()
     
-    # Crime over time
-    trends = df.groupby(df['crime_date'].dt.to_period('M')).size().reset_index(name='count')
-    trends['crime_date'] = trends['crime_date'].astype(str)
-    
+    if range == "30d":
+        start_date = now - timedelta(days=30)
+        df = df[df['crime_date'] >= start_date]
+        # Group by day for 30d
+        trends = df.groupby(df['crime_date'].dt.date).size().reset_index(name='count')
+        trends.rename(columns={'crime_date': 'label'}, inplace=True)
+    else:
+        # Default 12 months
+        start_date = now - timedelta(days=365)
+        df = df[df['crime_date'] >= start_date]
+        # Group by month
+        trends = df.groupby(df['crime_date'].dt.to_period('M')).size().reset_index(name='count')
+        trends.rename(columns={'crime_date': 'label'}, inplace=True)
+        trends['label'] = trends['label'].astype(str)
+
     # Crime by category
     categories = df['crime_type'].value_counts().to_dict()
     
     return {
         "monthly_trends": trends.to_dict(orient='records'),
-        "category_distribution": categories
+        "category_distribution": categories,
+        "total_incidents": len(df)
     }
 
 @app.post("/api/upload")

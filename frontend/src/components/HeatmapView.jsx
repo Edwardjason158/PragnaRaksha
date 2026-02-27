@@ -41,15 +41,18 @@ const MapController = ({ points }) => {
 };
 
 const HeatmapView = () => {
-    const [points, setPoints] = useState([]);
+    const [allPoints, setAllPoints] = useState([]);
+    const [filteredPoints, setFilteredPoints] = useState([]);
     const [timeRange, setTimeRange] = useState(12);
+    const [crimeType, setCrimeType] = useState('All Crime Types');
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchHeatmap = async () => {
             try {
                 const res = await axios.get('/api/heatmap');
-                setPoints(res.data);
+                setAllPoints(res.data);
+                setFilteredPoints(res.data);
             } catch (err) {
                 console.error(err);
             } finally {
@@ -59,6 +62,17 @@ const HeatmapView = () => {
         fetchHeatmap();
     }, []);
 
+    useEffect(() => {
+        let filtered = allPoints;
+        if (crimeType !== 'All Crime Types') {
+            filtered = filtered.filter(p => p.type === crimeType);
+        }
+        // In a real app, we'd filter by time too, but mock data doesn't have per-point time in heatmap api yet
+        // For now, let's simulate density change based on time for visual effect
+        const timeFactor = 1 - Math.abs(timeRange - 12) / 24;
+        setFilteredPoints(filtered.map(p => ({ ...p, intensity: (p.intensity || 0.8) * timeFactor })));
+    }, [crimeType, timeRange, allPoints]);
+
     return (
         <div className="h-full flex flex-col gap-6">
             <div className="flex items-center justify-between">
@@ -67,11 +81,17 @@ const HeatmapView = () => {
                     <p className="text-zinc-400">Spatio-temporal crime density analysis</p>
                 </div>
                 <div className="flex gap-4">
-                    <select className="bg-surface border border-white/10 rounded-lg px-4 py-2 outline-none focus:border-primary">
+                    <select
+                        value={crimeType}
+                        onChange={(e) => setCrimeType(e.target.value)}
+                        className="bg-surface border border-white/10 rounded-lg px-4 py-2 outline-none focus:border-primary text-sm"
+                    >
                         <option>All Crime Types</option>
                         <option>Theft</option>
                         <option>Assault</option>
                         <option>Burglary</option>
+                        <option>Robbery</option>
+                        <option>Vandalism</option>
                     </select>
                     <div className="glass px-4 py-2 rounded-lg flex items-center gap-4">
                         <span className="text-sm font-medium">Time: {timeRange}:00</span>
@@ -80,7 +100,7 @@ const HeatmapView = () => {
                             min="0"
                             max="23"
                             value={timeRange}
-                            onChange={(e) => setTimeRange(e.target.value)}
+                            onChange={(e) => setTimeRange(parseInt(e.target.value))}
                             className="accent-primary"
                         />
                     </div>
@@ -105,8 +125,8 @@ const HeatmapView = () => {
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
-                    <HeatLayer points={points} />
-                    <MapController points={points} />
+                    <HeatLayer points={filteredPoints} />
+                    <MapController points={filteredPoints} />
                 </MapContainer>
 
                 <div className="absolute bottom-6 left-6 z-[1000] glass p-4 rounded-xl flex flex-col gap-2">
