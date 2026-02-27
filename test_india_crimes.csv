@@ -1,0 +1,501 @@
+crime_id,area_name,place_type,latitude,longitude,crime_type,crime_date,crime_time,victim_age,victim_gender,risk_zone
+1,Banjara Hills,Market,17.394012,78.478062,Vandalism,2025-09-22,16:07:54,42,Female,Low
+2,Secunderabad,Street,17.391375,78.48918,Robbery,2025-09-12,01:22:54,56,Male,High
+3,Gachibowli,Park,17.379007,78.473785,Vandalism,2025-11-04,13:34:54,22,Female,Low
+4,Banjara Hills,Bus Stop,17.393986,78.495195,Vandalism,2025-12-11,20:05:54,59,Male,High
+5,Banjara Hills,Market,17.40414,78.469355,Vandalism,2026-02-16,06:07:54,55,Male,Low
+6,Madhapur,Bus Stop,17.394863,78.491778,Robbery,2025-12-20,16:15:54,63,Male,High
+7,Banjara Hills,Park,17.365633,78.487471,Assault,2026-01-08,04:40:54,28,Female,Low
+8,Ameerpet,Market,17.383469,78.491522,Vandalism,2025-09-29,11:43:54,64,Male,Medium
+9,Secunderabad,Residential Area,17.376413,78.494093,Theft,2025-12-01,18:06:54,19,Male,Medium
+10,Banjara Hills,Mall,17.39181,78.492412,Burglary,2026-02-18,15:26:54,31,Female,High
+11,Ameerpet,Market,17.38395,78.493029,Theft,2025-10-18,08:59:54,46,Female,Medium
+12,Secunderabad,Bus Stop,17.387562,78.498786,Vandalism,2025-11-08,01:05:54,42,Female,Low
+13,Gachibowli,Bus Stop,17.375139,78.493915,Vandalism,2025-10-03,03:30:54,56,Female,Medium
+14,Madhapur,Market,17.392302,78.491937,Robbery,2026-02-11,00:00:54,61,Female,High
+15,Secunderabad,Mall,17.386023,78.489282,Vandalism,2025-12-05,16:04:54,55,Male,High
+16,Ameerpet,Bus Stop,17.381608,78.487941,Assault,2025-11-17,07:41:54,47,Male,Medium
+17,Ameerpet,Park,17.38948,78.493662,Assault,2026-01-27,10:04:54,64,Female,High
+18,Banjara Hills,Bus Stop,17.383116,78.496677,Theft,2025-12-08,09:58:54,46,Female,Medium
+19,Madhapur,Street,17.381684,78.493672,Theft,2025-12-11,02:49:54,58,Male,Medium
+20,Gachibowli,Market,17.382089,78.491303,Robbery,2026-01-19,04:42:54,47,Male,Medium
+21,Gachibowli,Residential Area,17.386361,78.49386,Assault,2025-12-18,18:54:54,64,Female,High
+22,Gachibowli,Residential Area,17.397015,78.506472,Assault,2026-01-16,06:04:54,34,Male,Lowaa
+23,Ameerpet,Bus Stop,17.389774,78.49613,Vandalism,2026-02-17,05:21:54,56,Male,High
+24,Ameerpet,Bus Stop,17.39432,78.492327,Theft,2025-12-02,12:57:54,39,Male,High
+25,Madhapur,Street,17.388562,78.496668,Assault,2025-12-24,23:50:54,35,Female,High
+26,Banjara Hills,Mall,17.368428,78.500687,Theft,2025-11-02,08:16:54,43,Female,Low
+27,Ameerpet,Mall,17.373774,78.503465,Theft,2025-12-03,00:20:54,26,Male,Low
+28,Gachibowli,Street,17.404409,78.467497,Theft,2025-09-05,12:55:54,26,Female,Low
+29,Madhapur,Market,17.378064,78.488239,Burglary,2026-01-21,22:41:54,40,Male,Medium
+30,Banjara Hills,Street,17.376104,78.488429,Robbery,2025-10-23,23:48:54,32,Male,Medium
+31,Banjara Hills,Street,17.378224,78.491872,Theft,2025-11-13,01:26:54,19,Male,Medium
+32,Ameerpet,Mall,17.392755,78.4951,Vandalism,2025-09-28,04:40:54,20,Female,High
+33,Banjara Hills,Market,17.383664,78.493667,Burglary,2026-02-01,12:37:54,47,Female,Medium
+34,Madhapur,Mall,17.376649,78.490223,Assault,2025-12-23,21:51:54,44,Female,Medium
+35,Ameerpet,Mall,17.396525,78.493815,Robbery,2025-12-15,23:53:54,46,Male,Low
+36,Banjara Hills,Residential Area,17.379543,78.489282,Burglary,2025-12-24,00:08:54,24,Male,Medium
+37,Secunderabad,Market,17.403281,78.505376,Theft,2025-09-17,12:17:54,28,Male,Low
+38,Ameerpet,Park,17.375378,78.489949,Burglary,2025-10-18,07:57:54,35,Female,Medium
+39,Ameerpet,Street,17.379349,78.49411,Assault,2025-11-03,02:15:54,29,Female,Medium
+40,Madhapur,Park,17.38362,78.490153,Assault,2026-01-01,16:12:54,44,Male,Medium
+41,Gachibowli,Mall,17.380099,78.494257,Vandalism,2025-09-16,16:00:54,44,Female,Medium
+42,Secunderabad,Street,17.377604,78.490152,Burglary,2026-02-12,09:21:54,53,Female,Medium
+43,Gachibowli,Street,17.400629,78.484686,Assault,2025-11-24,23:28:54,35,Female,Low
+44,Banjara Hills,Park,17.391457,78.494392,Robbery,2026-02-05,19:52:54,39,Female,High
+45,Gachibowli,Residential Area,17.389278,78.494326,Assault,2025-09-28,08:10:54,50,Female,High
+46,Secunderabad,Street,17.371986,78.496804,Assault,2026-02-26,02:08:54,65,Male,Low
+47,Secunderabad,Street,17.380337,78.488512,Robbery,2026-02-25,06:59:54,29,Male,Medium
+48,Banjara Hills,Mall,17.38734,78.489923,Robbery,2026-02-25,21:06:54,54,Male,Low
+49,Banjara Hills,Street,17.389498,78.488722,Robbery,2026-01-10,06:38:54,28,Female,High
+50,Madhapur,Park,17.377015,78.494439,Burglary,2026-01-21,22:48:54,18,Female,Medium
+51,Ameerpet,Market,17.375679,78.489779,Vandalism,2026-01-06,01:10:54,30,Male,Medium
+52,Madhapur,Market,17.378812,78.494316,Burglary,2025-12-12,22:40:54,27,Male,Medium
+53,Gachibowli,Park,17.389795,78.493638,Theft,2026-02-17,07:16:54,65,Male,High
+54,Madhapur,Park,17.385396,78.495333,Theft,2025-10-06,19:44:54,30,Male,Low
+55,Madhapur,Bus Stop,17.395109,78.470053,Assault,2026-01-24,16:57:54,57,Male,Low
+56,Madhapur,Mall,17.379531,78.489526,Robbery,2025-10-24,14:38:54,39,Female,Medium
+57,Banjara Hills,Bus Stop,17.390046,78.489193,Robbery,2026-01-01,07:41:54,37,Female,High
+58,Banjara Hills,Park,17.391383,78.494694,Vandalism,2025-10-03,05:36:54,50,Male,High
+59,Ameerpet,Park,17.377434,78.485248,Robbery,2026-01-29,20:24:54,37,Female,Low
+60,Gachibowli,Residential Area,17.388628,78.489925,Vandalism,2025-12-16,17:53:54,55,Female,High
+61,Ameerpet,Mall,17.382904,78.4789,Vandalism,2025-12-22,09:16:54,58,Male,Low
+62,Madhapur,Park,17.392315,78.491167,Vandalism,2025-09-26,04:46:54,37,Male,High
+63,Banjara Hills,Street,17.371917,78.468953,Robbery,2025-12-08,02:43:54,50,Female,Low
+64,Secunderabad,Residential Area,17.378746,78.495718,Burglary,2026-02-07,18:12:54,65,Female,Medium
+65,Madhapur,Street,17.39009,78.495333,Assault,2026-02-22,22:48:54,47,Male,High
+66,Gachibowli,Residential Area,17.403298,78.496878,Burglary,2025-11-03,06:14:54,37,Female,Low
+67,Ameerpet,Market,17.377278,78.49235,Vandalism,2026-02-21,04:25:54,29,Female,Medium
+68,Secunderabad,Street,17.366816,78.481195,Robbery,2026-01-05,13:50:54,31,Male,Low
+69,Ameerpet,Street,17.379576,78.490834,Robbery,2025-10-13,20:30:54,34,Male,Medium
+70,Gachibowli,Park,17.394079,78.488311,Burglary,2025-10-10,11:29:54,22,Female,High
+71,Gachibowli,Mall,17.392803,78.493101,Burglary,2025-11-07,02:37:54,43,Female,High
+72,Ameerpet,Market,17.376642,78.494661,Vandalism,2025-09-16,00:21:54,45,Female,Medium
+73,Secunderabad,Residential Area,17.378046,78.489946,Burglary,2026-02-16,00:29:54,45,Male,Medium
+74,Ameerpet,Bus Stop,17.382205,78.487767,Burglary,2025-12-04,21:31:54,57,Female,Medium
+75,Banjara Hills,Market,17.393289,78.467138,Robbery,2025-12-31,06:04:54,34,Male,Low
+76,Madhapur,Park,17.391132,78.494701,Assault,2025-10-26,00:34:54,37,Male,High
+77,Ameerpet,Bus Stop,17.390941,78.483711,Robbery,2026-02-17,08:36:54,28,Male,Low
+78,Gachibowli,Bus Stop,17.388421,78.488839,Burglary,2026-02-25,11:35:54,53,Female,High
+79,Madhapur,Market,17.389113,78.498257,Robbery,2025-10-28,12:38:54,25,Female,Low
+80,Gachibowli,Mall,17.375767,78.491363,Assault,2026-01-17,12:41:54,35,Male,Medium
+81,Madhapur,Market,17.395242,78.497915,Theft,2026-02-13,12:06:54,29,Male,Low
+82,Banjara Hills,Park,17.391323,78.488346,Burglary,2026-01-16,13:41:54,21,Female,High
+83,Banjara Hills,Residential Area,17.37057,78.501487,Robbery,2025-12-23,08:29:54,53,Female,Low
+84,Madhapur,Mall,17.393348,78.493772,Assault,2026-02-04,03:53:54,36,Female,High
+85,Gachibowli,Park,17.392676,78.492513,Burglary,2025-10-23,15:57:54,65,Female,High
+86,Madhapur,Residential Area,17.384612,78.500077,Burglary,2025-11-02,09:35:54,57,Male,Low
+87,Ameerpet,Bus Stop,17.375858,78.490649,Burglary,2025-10-03,00:51:54,56,Female,Medium
+88,Madhapur,Residential Area,17.396117,78.46865,Robbery,2025-12-06,10:55:54,30,Female,Low
+89,Banjara Hills,Park,17.394255,78.502618,Burglary,2026-02-09,18:25:54,30,Female,Low
+90,Gachibowli,Street,17.401973,78.499714,Theft,2025-11-10,00:22:54,56,Male,Low
+91,Secunderabad,Bus Stop,17.392172,78.495233,Theft,2025-10-19,19:28:54,18,Female,High
+92,Banjara Hills,Street,17.400974,78.500802,Robbery,2025-09-20,04:11:54,20,Male,Low
+93,Banjara Hills,Street,17.394406,78.483346,Vandalism,2026-01-13,08:30:54,18,Male,Low
+94,Madhapur,Mall,17.386589,78.493616,Robbery,2025-10-20,17:05:54,20,Female,High
+95,Secunderabad,Street,17.378171,78.476819,Vandalism,2025-10-15,17:38:54,44,Male,Low
+96,Banjara Hills,Park,17.39153,78.496521,Burglary,2026-01-18,08:36:54,59,Female,Low
+97,Madhapur,Bus Stop,17.392416,78.490304,Burglary,2025-12-25,06:15:54,60,Female,High
+98,Madhapur,Street,17.383778,78.490422,Robbery,2025-11-20,14:37:54,43,Male,Medium
+99,Gachibowli,Park,17.387668,78.489012,Robbery,2025-09-18,17:14:54,47,Female,High
+100,Ameerpet,Bus Stop,17.386134,78.488412,Theft,2026-02-13,15:51:54,24,Female,High
+101,Madhapur,Mall,17.370587,78.48379,Assault,2025-12-04,04:47:54,32,Female,Low
+102,Banjara Hills,Mall,17.39408,78.491029,Assault,2025-09-29,21:20:54,27,Male,High
+103,Ameerpet,Park,17.383985,78.489339,Assault,2025-08-31,10:28:54,40,Male,Medium
+104,Secunderabad,Park,17.393835,78.496345,Assault,2025-11-15,03:09:54,61,Female,High
+105,Banjara Hills,Park,17.391674,78.492188,Burglary,2025-12-22,10:17:54,65,Female,High
+106,Madhapur,Mall,17.38119,78.491981,Theft,2025-11-14,16:40:54,59,Male,Medium
+107,Gachibowli,Park,17.371156,78.500316,Theft,2025-10-22,10:50:54,33,Female,Low
+108,Secunderabad,Mall,17.388513,78.495575,Robbery,2025-11-19,01:26:54,43,Male,High
+109,Banjara Hills,Park,17.39398,78.490528,Assault,2026-01-04,19:47:54,57,Male,High
+110,Ameerpet,Market,17.39748,78.47615,Assault,2026-01-20,01:00:54,62,Male,Low
+111,Banjara Hills,Residential Area,17.377921,78.490514,Theft,2025-12-07,14:45:54,40,Male,Medium
+112,Madhapur,Residential Area,17.37627,78.496234,Robbery,2026-02-10,09:25:54,60,Female,Medium
+113,Ameerpet,Street,17.378906,78.492901,Robbery,2025-10-07,21:39:54,64,Female,Medium
+114,Secunderabad,Park,17.370072,78.503232,Burglary,2025-10-07,20:54:54,25,Female,Low
+115,Madhapur,Bus Stop,17.375227,78.496014,Vandalism,2026-01-30,21:13:54,24,Male,Medium
+116,Madhapur,Bus Stop,17.378152,78.496434,Theft,2025-12-04,09:46:54,35,Female,Medium
+117,Secunderabad,Park,17.373336,78.50455,Assault,2025-09-14,02:10:54,35,Female,Low
+118,Banjara Hills,Bus Stop,17.394187,78.49249,Vandalism,2025-09-23,18:09:54,52,Male,High
+119,Gachibowli,Market,17.400367,78.47642,Burglary,2025-09-21,16:27:54,31,Male,Low
+120,Ameerpet,Bus Stop,17.386351,78.495249,Burglary,2026-02-07,12:22:54,30,Female,High
+121,Madhapur,Market,17.37308,78.482737,Burglary,2026-02-12,19:57:54,33,Male,Low
+122,Ameerpet,Market,17.389338,78.491505,Theft,2025-12-22,06:48:54,52,Male,Low
+123,Madhapur,Park,17.375953,78.491157,Assault,2025-12-05,11:11:54,48,Female,Medium
+124,Ameerpet,Residential Area,17.377632,78.478595,Burglary,2026-01-02,09:26:54,22,Male,Low
+125,Madhapur,Mall,17.396442,78.498215,Theft,2025-12-09,10:59:54,23,Female,Low
+126,Madhapur,Bus Stop,17.386077,78.488519,Burglary,2025-12-14,01:52:54,48,Female,High
+127,Madhapur,Mall,17.392872,78.488552,Vandalism,2025-12-11,15:14:54,44,Male,High
+128,Secunderabad,Bus Stop,17.386268,78.490661,Vandalism,2025-11-24,15:57:54,21,Male,High
+129,Gachibowli,Park,17.378528,78.494772,Assault,2025-12-04,23:50:54,35,Female,Medium
+130,Secunderabad,Market,17.376243,78.490528,Assault,2025-11-03,07:02:54,57,Male,Medium
+131,Madhapur,Street,17.381912,78.501163,Robbery,2025-09-23,07:39:54,20,Male,Low
+132,Secunderabad,Residential Area,17.394906,78.4899,Burglary,2025-09-20,02:11:54,43,Female,High
+133,Gachibowli,Market,17.39203,78.487878,Vandalism,2026-02-23,05:40:54,59,Female,High
+134,Madhapur,Mall,17.374076,78.480678,Vandalism,2026-01-11,18:01:54,22,Female,Low
+135,Banjara Hills,Mall,17.395009,78.502607,Vandalism,2026-02-25,18:38:54,27,Male,Low
+136,Madhapur,Mall,17.392693,78.495041,Assault,2026-02-23,07:40:54,44,Female,High
+137,Gachibowli,Park,17.377247,78.494079,Assault,2025-10-24,01:18:54,37,Male,Medium
+138,Banjara Hills,Street,17.382903,78.492785,Theft,2026-02-22,09:53:54,36,Male,Medium
+139,Ameerpet,Street,17.38649,78.496229,Robbery,2025-12-14,03:19:54,51,Male,High
+140,Madhapur,Residential Area,17.389761,78.492444,Robbery,2025-10-09,00:26:54,51,Male,High
+141,Gachibowli,Market,17.380091,78.500433,Assault,2025-11-09,21:44:54,53,Male,Low
+142,Ameerpet,Bus Stop,17.396118,78.46959,Burglary,2025-12-02,14:24:54,46,Female,Low
+143,Gachibowli,Park,17.39455,78.495257,Vandalism,2025-11-12,20:56:54,30,Male,High
+144,Madhapur,Market,17.380101,78.495044,Theft,2025-09-22,07:20:54,55,Male,Medium
+145,Banjara Hills,Bus Stop,17.39849,78.490948,Burglary,2026-01-21,04:31:54,42,Female,Low
+146,Madhapur,Residential Area,17.376417,78.495986,Robbery,2025-11-04,16:35:54,58,Female,Medium
+147,Madhapur,Park,17.380104,78.478959,Vandalism,2026-01-30,08:29:54,55,Female,Low
+148,Banjara Hills,Residential Area,17.375706,78.488484,Theft,2025-10-22,02:27:54,24,Male,Medium
+149,Madhapur,Market,17.389681,78.493126,Vandalism,2025-10-03,19:09:54,47,Male,High
+150,Banjara Hills,Market,17.387892,78.496019,Burglary,2026-02-25,17:08:54,46,Female,High
+151,Secunderabad,Mall,17.379159,78.479343,Robbery,2026-01-08,20:02:54,28,Male,Low
+152,Secunderabad,Residential Area,17.391704,78.489966,Burglary,2025-11-05,10:13:54,50,Male,High
+153,Banjara Hills,Bus Stop,17.381082,78.488644,Robbery,2025-11-19,22:45:54,62,Male,Medium
+154,Secunderabad,Residential Area,17.379062,78.494174,Burglary,2026-02-16,07:06:54,58,Female,Medium
+155,Secunderabad,Market,17.372745,78.496363,Theft,2025-11-09,07:45:54,27,Female,Low
+156,Madhapur,Market,17.378124,78.494171,Burglary,2025-10-31,01:03:54,20,Male,Medium
+157,Madhapur,Street,17.389764,78.474834,Assault,2025-10-08,06:44:54,51,Female,Low
+158,Banjara Hills,Market,17.392,78.48926,Assault,2026-02-16,08:02:54,25,Female,Low
+159,Secunderabad,Bus Stop,17.382171,78.496164,Burglary,2026-01-23,22:00:54,39,Male,Medium
+160,Ameerpet,Mall,17.377676,78.496611,Theft,2026-01-30,04:23:54,32,Male,Medium
+161,Banjara Hills,Park,17.393685,78.487869,Theft,2025-09-27,16:53:54,24,Male,High
+162,Banjara Hills,Street,17.388287,78.49703,Theft,2026-02-05,21:41:54,33,Male,Low
+163,Banjara Hills,Bus Stop,17.382763,78.491585,Assault,2026-02-19,05:41:54,20,Female,Medium
+164,Ameerpet,Market,17.383139,78.487796,Robbery,2026-02-13,21:54:54,24,Male,Low
+165,Banjara Hills,Market,17.378355,78.491859,Vandalism,2025-09-11,20:20:54,53,Male,Medium
+166,Banjara Hills,Mall,17.390096,78.493646,Robbery,2025-12-23,23:09:54,63,Female,High
+167,Gachibowli,Residential Area,17.389847,78.5028,Assault,2025-09-07,09:20:54,33,Female,Low
+168,Gachibowli,Bus Stop,17.372359,78.489009,Robbery,2026-02-10,01:08:54,61,Female,Low
+169,Gachibowli,Mall,17.371918,78.491044,Robbery,2025-11-20,10:58:54,30,Male,Low
+170,Madhapur,Residential Area,17.391917,78.490084,Vandalism,2026-02-07,01:43:54,34,Male,High
+171,Madhapur,Bus Stop,17.375521,78.491753,Assault,2025-10-15,23:41:54,47,Male,Medium
+172,Ameerpet,Street,17.388885,78.489644,Assault,2026-01-11,19:59:54,60,Male,High
+173,Banjara Hills,Park,17.366334,78.495262,Robbery,2025-11-15,09:52:54,57,Male,Low
+174,Secunderabad,Mall,17.398631,78.467931,Theft,2025-12-19,08:12:54,20,Male,Low
+175,Gachibowli,Mall,17.394351,78.491057,Assault,2025-09-03,17:05:54,58,Male,High
+176,Madhapur,Street,17.388542,78.488952,Assault,2026-01-20,03:43:54,26,Male,High
+177,Banjara Hills,Market,17.374344,78.468866,Vandalism,2025-10-22,11:21:54,46,Female,Low
+178,Madhapur,Street,17.380234,78.488057,Burglary,2025-10-25,06:06:54,51,Female,Medium
+179,Banjara Hills,Mall,17.392659,78.495514,Robbery,2026-02-11,01:53:54,29,Female,High
+180,Banjara Hills,Market,17.373742,78.490051,Theft,2026-01-13,23:49:54,47,Male,Low
+181,Banjara Hills,Residential Area,17.393466,78.492271,Theft,2026-01-24,18:44:54,53,Male,High
+182,Ameerpet,Park,17.380062,78.491095,Vandalism,2025-10-03,09:42:54,41,Male,Medium
+183,Ameerpet,Market,17.383022,78.496367,Vandalism,2025-10-19,12:37:54,59,Male,Medium
+184,Ameerpet,Mall,17.389202,78.494789,Vandalism,2026-01-20,00:51:54,40,Female,High
+185,Banjara Hills,Park,17.387989,78.469643,Burglary,2025-11-25,18:18:54,54,Female,Low
+186,Secunderabad,Mall,17.39896,78.471105,Assault,2026-02-01,13:57:54,56,Female,Low
+187,Gachibowli,Residential Area,17.376062,78.489443,Robbery,2025-09-18,14:38:54,26,Female,Medium
+188,Banjara Hills,Park,17.379395,78.494977,Vandalism,2026-02-02,00:30:54,41,Male,Medium
+189,Banjara Hills,Park,17.377525,78.492112,Vandalism,2025-10-23,04:35:54,31,Male,Medium
+190,Secunderabad,Bus Stop,17.400651,78.494032,Vandalism,2025-12-11,02:43:54,64,Male,Low
+191,Madhapur,Street,17.391119,78.491175,Theft,2025-10-14,21:33:54,39,Male,High
+192,Secunderabad,Market,17.398126,78.46917,Burglary,2025-10-07,04:26:54,53,Female,Low
+193,Gachibowli,Mall,17.366075,78.487197,Vandalism,2025-10-28,20:39:54,62,Male,Low
+194,Ameerpet,Street,17.388059,78.489095,Assault,2025-10-29,22:24:54,33,Female,High
+195,Gachibowli,Market,17.398167,78.499395,Burglary,2025-09-16,08:53:54,62,Female,Low
+196,Ameerpet,Park,17.380181,78.49552,Vandalism,2025-10-26,23:33:54,51,Female,Medium
+197,Gachibowli,Mall,17.38053,78.492809,Vandalism,2025-11-02,06:06:54,39,Female,Medium
+198,Banjara Hills,Park,17.392856,78.492756,Assault,2025-09-11,23:21:54,60,Male,High
+199,Ameerpet,Residential Area,17.390503,78.490839,Assault,2026-01-06,03:15:54,47,Male,High
+200,Ameerpet,Market,17.382378,78.496568,Theft,2025-11-16,06:54:54,26,Male,Medium
+201,Madhapur,Residential Area,17.370562,78.506354,Robbery,2026-02-02,23:34:54,57,Female,Low
+202,Gachibowli,Market,17.378632,78.493903,Assault,2025-08-31,18:53:54,21,Female,Medium
+203,Madhapur,Market,17.39394,78.492417,Robbery,2025-09-19,09:09:54,20,Female,High
+204,Banjara Hills,Residential Area,17.383776,78.489031,Assault,2025-12-28,21:52:54,51,Male,Medium
+205,Gachibowli,Residential Area,17.390449,78.493579,Theft,2025-11-01,07:01:54,22,Male,High
+206,Gachibowli,Park,17.367128,78.482599,Burglary,2026-01-08,10:15:54,32,Female,Low
+207,Ameerpet,Market,17.391707,78.494489,Assault,2025-11-09,02:25:54,18,Female,High
+208,Ameerpet,Park,17.382492,78.489808,Assault,2026-02-17,14:22:54,38,Female,Medium
+209,Banjara Hills,Street,17.38914,78.49577,Robbery,2025-11-07,01:48:54,48,Male,High
+210,Secunderabad,Park,17.365408,78.494066,Vandalism,2026-01-29,04:33:54,27,Female,Low
+211,Secunderabad,Street,17.382888,78.492514,Vandalism,2025-12-04,17:40:54,33,Male,Medium
+212,Gachibowli,Market,17.386899,78.5061,Assault,2025-11-01,17:34:54,22,Male,Low
+213,Ameerpet,Park,17.389398,78.495582,Vandalism,2025-12-27,14:21:54,61,Female,High
+214,Banjara Hills,Market,17.394652,78.494939,Theft,2025-10-25,19:02:54,23,Female,High
+215,Banjara Hills,Residential Area,17.385605,78.505824,Vandalism,2026-02-02,02:53:54,19,Female,Low
+216,Ameerpet,Bus Stop,17.377596,78.471057,Burglary,2026-01-06,10:59:54,61,Female,Low
+217,Gachibowli,Mall,17.388153,78.489087,Theft,2026-01-15,18:49:54,34,Male,High
+218,Gachibowli,Residential Area,17.389221,78.491619,Vandalism,2025-12-10,21:30:54,34,Male,High
+219,Madhapur,Park,17.387534,78.4955,Burglary,2025-12-08,18:56:54,64,Female,High
+220,Madhapur,Bus Stop,17.403331,78.487602,Burglary,2025-10-12,14:37:54,55,Male,Low
+221,Secunderabad,Park,17.37997,78.490604,Theft,2025-09-07,21:07:54,50,Female,Medium
+222,Secunderabad,Residential Area,17.386544,78.49334,Robbery,2026-01-24,11:39:54,38,Male,High
+223,Madhapur,Residential Area,17.382195,78.493003,Vandalism,2025-10-02,16:00:54,21,Male,Medium
+224,Secunderabad,Street,17.383758,78.478115,Vandalism,2025-10-13,23:41:54,35,Male,Low
+225,Secunderabad,Park,17.383179,78.49282,Theft,2026-01-27,13:47:54,45,Male,Medium
+226,Gachibowli,Park,17.368479,78.466739,Theft,2025-10-16,13:01:54,56,Male,Low
+227,Madhapur,Residential Area,17.39097,78.466873,Vandalism,2026-01-29,05:56:54,55,Male,Low
+228,Ameerpet,Market,17.387216,78.495374,Burglary,2026-01-22,19:35:54,32,Male,High
+229,Ameerpet,Bus Stop,17.369554,78.485791,Assault,2025-08-31,12:10:54,44,Female,Low
+230,Madhapur,Street,17.403817,78.484559,Robbery,2025-09-06,16:48:54,29,Male,Low
+231,Secunderabad,Market,17.377176,78.495113,Assault,2025-09-12,23:16:54,28,Male,Medium
+232,Secunderabad,Market,17.388902,78.495535,Burglary,2025-11-13,15:58:54,60,Female,High
+233,Ameerpet,Mall,17.377878,78.489524,Vandalism,2025-10-29,17:33:54,61,Female,Medium
+234,Secunderabad,Street,17.382054,78.49207,Assault,2025-11-03,13:34:54,51,Male,Medium
+235,Gachibowli,Bus Stop,17.386472,78.488409,Robbery,2026-02-19,07:26:54,24,Male,High
+236,Madhapur,Bus Stop,17.394338,78.490805,Assault,2025-10-26,07:17:54,60,Female,High
+237,Ameerpet,Mall,17.389769,78.491233,Burglary,2026-02-13,14:43:54,19,Male,High
+238,Secunderabad,Street,17.39056,78.483314,Theft,2025-11-21,17:34:54,51,Male,Low
+239,Secunderabad,Market,17.382055,78.478137,Vandalism,2025-10-02,11:23:54,21,Male,Low
+240,Secunderabad,Market,17.379549,78.495869,Robbery,2025-10-19,13:20:54,20,Male,Medium
+241,Secunderabad,Bus Stop,17.386061,78.492003,Robbery,2025-12-20,10:06:54,50,Female,High
+242,Banjara Hills,Residential Area,17.392983,78.492823,Burglary,2025-12-04,23:39:54,32,Female,High
+243,Madhapur,Street,17.389328,78.48849,Assault,2025-10-09,03:14:54,37,Female,High
+244,Ameerpet,Market,17.378822,78.49641,Robbery,2026-02-10,05:43:54,31,Female,Medium
+245,Banjara Hills,Market,17.380965,78.487827,Assault,2025-12-21,00:09:54,48,Female,Medium
+246,Madhapur,Street,17.383634,78.506641,Theft,2025-09-18,04:03:54,46,Female,Low
+247,Ameerpet,Market,17.375156,78.488055,Burglary,2025-12-15,01:50:54,45,Male,Medium
+248,Madhapur,Bus Stop,17.38845,78.50155,Vandalism,2025-12-17,22:34:54,40,Female,Low
+249,Madhapur,Market,17.387337,78.495438,Theft,2025-12-14,11:38:54,63,Male,High
+250,Secunderabad,Bus Stop,17.392167,78.493008,Vandalism,2026-02-26,08:46:54,24,Male,High
+251,Ameerpet,Park,17.378823,78.49653,Vandalism,2026-02-04,14:45:54,40,Male,Medium
+252,Madhapur,Bus Stop,17.379732,78.488004,Robbery,2025-09-19,16:09:54,49,Female,Medium
+253,Secunderabad,Street,17.367125,78.47667,Burglary,2025-10-30,23:34:54,27,Female,Low
+254,Madhapur,Residential Area,17.38574,78.485171,Robbery,2025-09-23,21:08:54,60,Female,Low
+255,Banjara Hills,Mall,17.376261,78.487969,Assault,2025-12-17,14:10:54,58,Male,Medium
+256,Gachibowli,Park,17.400684,78.500611,Robbery,2026-01-10,13:09:54,58,Female,Low
+257,Secunderabad,Park,17.390971,78.491353,Vandalism,2025-11-04,12:53:54,63,Male,High
+258,Banjara Hills,Street,17.380927,78.495697,Robbery,2025-10-11,07:48:54,37,Male,Medium
+259,Banjara Hills,Bus Stop,17.379603,78.48925,Theft,2026-01-29,07:45:54,50,Female,Medium
+260,Secunderabad,Mall,17.385033,78.483583,Robbery,2025-10-23,10:09:54,34,Female,Low
+261,Gachibowli,Bus Stop,17.384376,78.501456,Vandalism,2026-02-02,18:28:54,61,Male,Low
+262,Secunderabad,Bus Stop,17.380489,78.487757,Theft,2025-12-20,20:24:54,39,Female,Medium
+263,Madhapur,Residential Area,17.399641,78.471323,Theft,2025-10-22,12:03:54,65,Female,Low
+264,Gachibowli,Street,17.388021,78.491462,Burglary,2025-10-12,13:30:54,63,Female,High
+265,Gachibowli,Market,17.375441,78.492844,Theft,2025-10-23,15:08:54,50,Male,Medium
+266,Gachibowli,Park,17.402121,78.471039,Burglary,2026-01-17,17:21:54,57,Male,Low
+267,Ameerpet,Park,17.397489,78.483028,Vandalism,2026-01-16,17:23:54,56,Male,Low
+268,Ameerpet,Park,17.38672,78.49598,Assault,2026-01-18,20:07:54,54,Male,High
+269,Ameerpet,Residential Area,17.404335,78.475343,Burglary,2025-10-24,09:01:54,45,Female,Low
+270,Gachibowli,Mall,17.393392,78.493065,Burglary,2026-01-22,04:51:54,18,Male,High
+271,Gachibowli,Street,17.389443,78.492482,Robbery,2025-10-05,00:33:54,55,Female,High
+272,Gachibowli,Mall,17.366214,78.484072,Theft,2025-12-22,14:16:54,46,Female,Low
+273,Secunderabad,Residential Area,17.40269,78.488738,Robbery,2025-09-13,11:19:54,34,Female,Low
+274,Gachibowli,Street,17.392348,78.488586,Theft,2025-11-07,18:08:54,31,Male,High
+275,Gachibowli,Market,17.388075,78.495648,Robbery,2026-02-11,23:13:54,61,Male,Low
+276,Ameerpet,Park,17.378236,78.476271,Robbery,2025-12-31,13:13:54,63,Male,Low
+277,Madhapur,Mall,17.398172,78.499519,Vandalism,2025-11-06,03:34:54,59,Male,Low
+278,Banjara Hills,Market,17.377483,78.490479,Burglary,2025-10-13,05:32:54,26,Female,Medium
+279,Madhapur,Mall,17.376912,78.487778,Assault,2026-01-05,11:22:54,31,Male,Medium
+280,Madhapur,Residential Area,17.381582,78.492368,Robbery,2025-10-18,12:45:54,57,Male,Medium
+281,Banjara Hills,Park,17.380098,78.491495,Robbery,2025-10-31,14:26:54,60,Male,Medium
+282,Secunderabad,Mall,17.378466,78.489155,Theft,2026-02-13,03:52:54,63,Male,Medium
+283,Madhapur,Residential Area,17.3809,78.489432,Vandalism,2025-10-21,21:37:54,54,Female,Medium
+284,Secunderabad,Market,17.383985,78.493929,Vandalism,2025-10-30,00:06:54,53,Male,Medium
+285,Banjara Hills,Street,17.383479,78.490548,Robbery,2025-12-24,16:47:54,35,Female,Medium
+286,Ameerpet,Market,17.396162,78.480582,Robbery,2025-09-24,09:39:54,32,Female,Low
+287,Gachibowli,Park,17.388047,78.494973,Burglary,2026-02-21,06:08:54,61,Male,High
+288,Gachibowli,Street,17.382626,78.493405,Theft,2025-10-02,06:18:54,18,Female,Medium
+289,Madhapur,Mall,17.369738,78.492791,Burglary,2026-02-23,05:46:54,29,Male,Low
+290,Ameerpet,Street,17.379429,78.489097,Theft,2025-12-28,12:33:54,64,Male,Medium
+291,Gachibowli,Mall,17.384149,78.469911,Assault,2025-11-23,12:55:54,51,Female,Low
+292,Madhapur,Bus Stop,17.391113,78.49583,Theft,2025-10-13,16:19:54,33,Male,High
+293,Ameerpet,Street,17.377249,78.493329,Assault,2026-01-28,00:45:54,47,Male,Medium
+294,Gachibowli,Market,17.38839,78.488723,Robbery,2026-02-20,23:35:54,33,Male,Low
+295,Banjara Hills,Street,17.391419,78.491822,Theft,2025-12-14,07:18:54,38,Female,High
+296,Madhapur,Park,17.387602,78.485743,Assault,2026-01-21,01:32:54,65,Male,Low
+297,Ameerpet,Market,17.394676,78.488708,Burglary,2025-12-06,14:41:54,38,Female,High
+298,Banjara Hills,Mall,17.371276,78.479101,Vandalism,2025-09-30,13:10:54,41,Female,Low
+299,Secunderabad,Residential Area,17.393413,78.49228,Theft,2026-02-20,15:24:54,29,Female,High
+300,Gachibowli,Residential Area,17.3987,78.495632,Vandalism,2026-01-05,14:00:54,58,Female,Low
+301,Gachibowli,Mall,17.39825,78.489492,Robbery,2025-12-27,07:53:54,30,Male,Low
+302,Gachibowli,Market,17.403322,78.466846,Burglary,2025-12-01,12:45:54,46,Male,Low
+303,Banjara Hills,Park,17.372833,78.487263,Theft,2025-12-07,04:32:54,40,Female,Low
+304,Gachibowli,Street,17.392614,78.495262,Assault,2025-09-30,15:52:54,22,Female,Low
+305,Gachibowli,Market,17.38362,78.504619,Assault,2026-01-03,23:58:54,32,Female,Low
+306,Banjara Hills,Market,17.380365,78.487754,Burglary,2025-09-25,04:35:54,22,Male,Medium
+307,Ameerpet,Bus Stop,17.388251,78.489025,Assault,2026-02-19,18:16:54,31,Male,High
+308,Ameerpet,Bus Stop,17.387314,78.490487,Burglary,2025-10-22,00:14:54,18,Male,High
+309,Ameerpet,Street,17.370403,78.479931,Assault,2025-11-02,06:33:54,38,Male,Low
+310,Secunderabad,Mall,17.392013,78.489868,Theft,2025-11-30,19:47:54,49,Male,High
+311,Banjara Hills,Bus Stop,17.386301,78.487863,Burglary,2026-01-14,12:31:54,49,Male,Low
+312,Secunderabad,Mall,17.377141,78.491445,Burglary,2025-11-29,01:47:54,55,Male,Medium
+313,Secunderabad,Mall,17.388834,78.489455,Burglary,2025-09-12,19:21:54,39,Male,High
+314,Madhapur,Mall,17.388069,78.494385,Assault,2025-11-28,04:25:54,22,Female,High
+315,Secunderabad,Street,17.375262,78.48779,Burglary,2025-12-06,23:30:54,26,Male,Medium
+316,Banjara Hills,Park,17.392979,78.495179,Assault,2025-09-09,01:04:54,49,Female,High
+317,Ameerpet,Residential Area,17.377623,78.490168,Assault,2026-01-11,01:01:54,22,Male,Medium
+318,Madhapur,Park,17.366988,78.469366,Robbery,2026-01-14,19:23:54,18,Male,Low
+319,Madhapur,Residential Area,17.380406,78.483558,Vandalism,2025-09-08,23:42:54,42,Female,Low
+320,Ameerpet,Park,17.386975,78.490099,Burglary,2025-09-01,06:45:54,22,Male,High
+321,Banjara Hills,Market,17.380687,78.499193,Assault,2026-02-25,14:05:54,23,Female,Low
+322,Madhapur,Park,17.380016,78.500912,Robbery,2025-10-17,15:23:54,21,Female,Low
+323,Secunderabad,Street,17.389746,78.491809,Assault,2025-09-28,13:52:54,36,Female,High
+324,Ameerpet,Street,17.383303,78.491744,Vandalism,2025-12-28,19:09:54,46,Female,Medium
+325,Madhapur,Market,17.37702,78.494672,Burglary,2025-12-22,08:42:54,32,Male,Medium
+326,Madhapur,Mall,17.375152,78.494306,Burglary,2025-12-07,17:59:54,22,Female,Low
+327,Gachibowli,Residential Area,17.394404,78.489878,Burglary,2026-01-30,01:48:54,21,Female,High
+328,Ameerpet,Bus Stop,17.367455,78.494992,Vandalism,2025-09-10,22:41:54,50,Male,Low
+329,Madhapur,Park,17.376613,78.492331,Theft,2025-11-11,10:16:54,38,Male,Medium
+330,Banjara Hills,Bus Stop,17.378027,78.487997,Vandalism,2025-11-16,23:21:54,60,Male,Low
+331,Banjara Hills,Bus Stop,17.39932,78.476826,Robbery,2025-12-08,07:53:54,54,Female,Low
+332,Ameerpet,Street,17.381755,78.493865,Robbery,2025-12-20,01:04:54,59,Female,Medium
+333,Gachibowli,Market,17.404706,78.492344,Burglary,2026-02-14,18:02:54,45,Female,Low
+334,Secunderabad,Market,17.390767,78.493481,Theft,2026-02-18,01:43:54,62,Male,High
+335,Madhapur,Park,17.398135,78.471551,Assault,2026-02-23,20:36:54,31,Male,Low
+336,Gachibowli,Bus Stop,17.383641,78.493936,Burglary,2025-12-04,15:34:54,64,Male,Medium
+337,Madhapur,Market,17.38057,78.496254,Theft,2026-02-18,07:42:54,20,Female,Medium
+338,Ameerpet,Street,17.403786,78.475615,Theft,2026-02-18,08:56:54,29,Male,Low
+339,Madhapur,Market,17.383089,78.487148,Theft,2025-09-22,10:40:54,20,Male,Low
+340,Gachibowli,Bus Stop,17.380811,78.491046,Vandalism,2025-11-22,10:40:54,48,Female,Medium
+341,Secunderabad,Bus Stop,17.380355,78.493006,Theft,2026-01-17,00:41:54,64,Female,Medium
+342,Banjara Hills,Market,17.370889,78.479176,Assault,2026-02-06,13:10:54,62,Male,Low
+343,Madhapur,Street,17.391723,78.488171,Vandalism,2025-11-17,03:50:54,37,Female,High
+344,Ameerpet,Market,17.391889,78.495628,Robbery,2025-11-21,13:03:54,60,Male,High
+345,Gachibowli,Park,17.375221,78.489224,Robbery,2026-02-19,17:04:54,27,Male,Medium
+346,Banjara Hills,Mall,17.379221,78.474738,Assault,2025-12-01,02:03:54,28,Female,Low
+347,Madhapur,Street,17.376795,78.493936,Burglary,2025-12-06,09:30:54,21,Male,Medium
+348,Gachibowli,Bus Stop,17.382314,78.471547,Robbery,2025-12-02,10:22:54,45,Male,Low
+349,Gachibowli,Street,17.382317,78.493261,Robbery,2025-10-14,00:25:54,50,Female,Medium
+350,Banjara Hills,Bus Stop,17.370986,78.481608,Vandalism,2025-11-24,00:15:54,58,Male,Low
+351,Banjara Hills,Street,17.379183,78.495957,Assault,2025-12-13,23:43:54,35,Male,Medium
+352,Ameerpet,Street,17.389911,78.491367,Assault,2025-10-26,01:40:54,34,Male,High
+353,Secunderabad,Market,17.387838,78.495845,Assault,2025-11-13,20:51:54,27,Male,High
+354,Gachibowli,Market,17.379499,78.489885,Vandalism,2025-09-25,13:23:54,22,Female,Medium
+355,Madhapur,Bus Stop,17.386817,78.487843,Theft,2026-02-25,12:27:54,60,Male,High
+356,Ameerpet,Mall,17.391036,78.493511,Burglary,2025-10-31,06:31:54,41,Female,High
+357,Madhapur,Park,17.378072,78.488591,Robbery,2025-12-15,04:31:54,48,Male,Medium
+358,Banjara Hills,Market,17.381123,78.481654,Vandalism,2026-02-26,16:13:54,34,Female,Low
+359,Madhapur,Market,17.391218,78.485335,Theft,2025-12-19,05:27:54,32,Male,Low
+360,Madhapur,Residential Area,17.390633,78.494227,Robbery,2025-11-05,14:22:54,26,Male,High
+361,Gachibowli,Street,17.401933,78.501673,Burglary,2025-11-16,11:13:54,18,Male,Low
+362,Madhapur,Park,17.376857,78.495879,Assault,2025-09-20,21:34:54,38,Female,Medium
+363,Gachibowli,Bus Stop,17.393644,78.487958,Theft,2025-11-16,13:27:54,23,Male,High
+364,Ameerpet,Mall,17.382215,78.493495,Robbery,2025-09-13,07:44:54,58,Male,Medium
+365,Gachibowli,Park,17.365416,78.483453,Assault,2025-11-18,12:09:54,49,Male,Low
+366,Madhapur,Market,17.396346,78.502121,Assault,2025-10-16,18:43:54,39,Female,Low
+367,Ameerpet,Residential Area,17.39062,78.500291,Robbery,2025-10-03,16:21:54,40,Male,Low
+368,Banjara Hills,Residential Area,17.37716,78.490469,Burglary,2025-12-29,10:42:54,64,Male,Medium
+369,Madhapur,Market,17.389073,78.496295,Robbery,2025-10-06,06:20:54,41,Female,High
+370,Secunderabad,Bus Stop,17.392647,78.482012,Vandalism,2025-12-06,08:12:54,56,Male,Low
+371,Banjara Hills,Park,17.388749,78.490697,Vandalism,2025-11-27,07:01:54,36,Female,High
+372,Gachibowli,Park,17.370636,78.488662,Robbery,2026-01-18,07:33:54,63,Male,Low
+373,Madhapur,Mall,17.38916,78.49339,Robbery,2025-12-02,08:02:54,34,Female,High
+374,Ameerpet,Park,17.389771,78.49575,Burglary,2026-01-24,16:43:54,24,Male,High
+375,Secunderabad,Street,17.39421,78.488437,Burglary,2025-10-25,23:12:54,40,Male,High
+376,Ameerpet,Residential Area,17.392001,78.494681,Vandalism,2026-02-20,00:09:54,47,Male,High
+377,Secunderabad,Market,17.388974,78.491481,Burglary,2025-11-16,04:31:54,61,Male,High
+378,Madhapur,Mall,17.389178,78.490098,Burglary,2025-10-24,23:30:54,60,Male,High
+379,Secunderabad,Bus Stop,17.37327,78.483071,Vandalism,2025-11-18,13:01:54,36,Male,Low
+380,Ameerpet,Street,17.387932,78.495244,Vandalism,2026-02-01,09:28:54,32,Female,High
+381,Madhapur,Park,17.388133,78.48814,Robbery,2025-11-05,18:08:54,60,Male,Low
+382,Secunderabad,Mall,17.382377,78.493798,Vandalism,2025-10-11,13:41:54,62,Female,Medium
+383,Gachibowli,Residential Area,17.387328,78.495317,Assault,2025-12-16,13:26:54,53,Male,High
+384,Gachibowli,Market,17.372043,78.484722,Burglary,2025-09-18,14:23:54,32,Female,Low
+385,Secunderabad,Market,17.387897,78.477338,Vandalism,2025-09-06,20:38:54,33,Male,Low
+386,Secunderabad,Bus Stop,17.382263,78.489229,Burglary,2026-01-02,08:04:54,48,Female,Medium
+387,Banjara Hills,Park,17.39199,78.49272,Theft,2026-02-19,19:04:54,39,Female,High
+388,Gachibowli,Mall,17.37933,78.469788,Vandalism,2025-12-09,08:04:54,24,Female,Low
+389,Madhapur,Mall,17.391242,78.471265,Assault,2026-01-06,15:31:54,62,Male,Low
+390,Banjara Hills,Residential Area,17.376741,78.491455,Theft,2025-11-09,02:56:54,64,Male,Medium
+391,Ameerpet,Mall,17.368907,78.496439,Burglary,2025-12-24,23:36:54,34,Female,Low
+392,Ameerpet,Park,17.379626,78.492714,Vandalism,2026-02-22,22:21:54,25,Female,Medium
+393,Gachibowli,Residential Area,17.380505,78.49417,Assault,2025-10-11,19:47:54,38,Female,Medium
+394,Ameerpet,Park,17.379845,78.490803,Burglary,2025-11-28,23:52:54,28,Female,Medium
+395,Secunderabad,Market,17.376091,78.48979,Vandalism,2025-09-25,17:20:54,37,Male,Medium
+396,Secunderabad,Street,17.388079,78.48993,Assault,2025-09-09,23:30:54,62,Male,High
+397,Ameerpet,Bus Stop,17.376536,78.494651,Assault,2026-02-06,22:00:54,63,Male,Medium
+398,Ameerpet,Street,17.383599,78.491389,Burglary,2026-02-16,02:10:54,55,Female,Medium
+399,Madhapur,Mall,17.385671,78.506495,Robbery,2025-11-10,09:25:54,54,Male,Low
+400,Banjara Hills,Street,17.368661,78.502449,Burglary,2025-11-30,06:51:54,25,Female,Low
+401,Secunderabad,Mall,17.393351,78.490602,Vandalism,2025-12-16,05:50:54,32,Female,High
+402,Secunderabad,Mall,17.389436,78.50624,Vandalism,2025-11-04,08:52:54,30,Female,Low
+403,Ameerpet,Park,17.382063,78.493918,Theft,2025-09-15,05:08:54,59,Male,Medium
+404,Madhapur,Residential Area,17.391828,78.492998,Robbery,2025-10-29,20:38:54,63,Male,High
+405,Secunderabad,Park,17.368044,78.478168,Vandalism,2025-09-06,04:23:54,57,Male,Low
+406,Banjara Hills,Park,17.386738,78.491427,Robbery,2025-09-24,11:58:54,44,Male,High
+407,Gachibowli,Residential Area,17.37716,78.495563,Theft,2026-02-03,19:26:54,56,Male,Medium
+408,Secunderabad,Mall,17.381289,78.490375,Vandalism,2026-01-26,14:05:54,29,Female,Low
+409,Banjara Hills,Market,17.376322,78.487991,Theft,2026-01-07,13:20:54,51,Male,Medium
+410,Banjara Hills,Mall,17.380222,78.495052,Robbery,2025-10-07,04:26:54,25,Male,Medium
+411,Madhapur,Residential Area,17.39288,78.49299,Vandalism,2026-02-24,07:55:54,47,Male,High
+412,Banjara Hills,Park,17.380927,78.490221,Burglary,2025-11-16,06:22:54,61,Male,Medium
+413,Banjara Hills,Mall,17.387089,78.490314,Assault,2026-01-13,11:13:54,52,Male,High
+414,Ameerpet,Bus Stop,17.392981,78.486623,Vandalism,2026-02-21,17:16:54,64,Female,Low
+415,Banjara Hills,Residential Area,17.383977,78.49179,Theft,2025-11-11,03:41:54,30,Female,Medium
+416,Madhapur,Residential Area,17.394622,78.488759,Burglary,2025-12-20,15:26:54,24,Female,High
+417,Secunderabad,Mall,17.381496,78.489654,Assault,2026-02-12,07:46:54,53,Male,Medium
+418,Ameerpet,Market,17.39125,78.495681,Robbery,2025-11-01,11:28:54,27,Female,High
+419,Ameerpet,Market,17.393962,78.494486,Robbery,2025-11-15,14:44:54,46,Female,Low
+420,Ameerpet,Street,17.394912,78.488133,Theft,2025-12-18,14:39:54,39,Male,High
+421,Banjara Hills,Street,17.379932,78.490017,Robbery,2026-01-24,14:12:54,55,Female,Medium
+422,Banjara Hills,Market,17.387498,78.492208,Vandalism,2025-12-19,09:55:54,64,Male,High
+423,Banjara Hills,Mall,17.380648,78.495794,Assault,2025-12-09,17:23:54,49,Male,Medium
+424,Banjara Hills,Park,17.3758,78.490076,Assault,2026-02-24,19:13:54,40,Male,Medium
+425,Madhapur,Residential Area,17.382541,78.480797,Robbery,2025-09-18,08:31:54,41,Male,Low
+426,Ameerpet,Mall,17.374546,78.5066,Vandalism,2025-12-16,10:18:54,18,Male,Low
+427,Ameerpet,Mall,17.393668,78.488827,Theft,2026-01-16,15:09:54,44,Male,High
+428,Madhapur,Bus Stop,17.375057,78.493795,Vandalism,2025-09-22,09:47:54,33,Male,Medium
+429,Madhapur,Bus Stop,17.392206,78.492721,Assault,2025-09-30,07:02:54,47,Female,High
+430,Ameerpet,Park,17.377239,78.488556,Burglary,2025-10-17,08:06:54,38,Male,Medium
+431,Banjara Hills,Residential Area,17.383017,78.490511,Vandalism,2025-11-28,03:14:54,61,Female,Medium
+432,Madhapur,Street,17.39578,78.485283,Burglary,2025-10-14,23:35:54,32,Female,Low
+433,Ameerpet,Street,17.39502,78.501837,Vandalism,2026-02-20,02:43:54,52,Female,Low
+434,Ameerpet,Bus Stop,17.389717,78.494962,Assault,2026-01-16,15:04:54,53,Male,High
+435,Ameerpet,Street,17.381756,78.496327,Vandalism,2025-11-27,00:54:54,33,Female,Medium
+436,Banjara Hills,Bus Stop,17.387114,78.492053,Theft,2026-01-17,14:54:54,26,Male,High
+437,Gachibowli,Park,17.380184,78.494939,Assault,2025-09-03,01:05:54,52,Female,Medium
+438,Madhapur,Residential Area,17.397887,78.475615,Theft,2025-09-26,22:32:54,48,Female,Low
+439,Madhapur,Park,17.389868,78.491304,Burglary,2025-12-07,11:43:54,23,Female,High
+440,Banjara Hills,Bus Stop,17.394859,78.471562,Assault,2025-12-22,02:04:54,42,Female,Low
+441,Ameerpet,Park,17.382883,78.496415,Burglary,2025-08-31,11:58:54,53,Male,Low
+442,Ameerpet,Park,17.398974,78.483101,Assault,2025-12-04,23:29:54,46,Male,Low
+443,Ameerpet,Bus Stop,17.386941,78.491043,Robbery,2025-10-22,11:53:54,38,Female,High
+444,Gachibowli,Street,17.392247,78.48814,Assault,2025-11-22,03:37:54,30,Male,High
+445,Secunderabad,Bus Stop,17.378624,78.495282,Robbery,2025-09-10,12:24:54,61,Male,Medium
+446,Banjara Hills,Residential Area,17.39025,78.496497,Theft,2025-11-16,09:17:54,32,Female,High
+447,Gachibowli,Park,17.391135,78.494221,Robbery,2025-09-03,12:11:54,23,Female,High
+448,Gachibowli,Bus Stop,17.389181,78.490763,Burglary,2026-01-17,09:54:54,21,Female,High
+449,Madhapur,Street,17.381255,78.490384,Vandalism,2025-11-23,21:13:54,41,Male,Medium
+450,Banjara Hills,Mall,17.393799,78.475928,Burglary,2025-10-06,07:04:54,31,Female,Low
+451,Ameerpet,Bus Stop,17.375926,78.491182,Theft,2025-09-04,17:32:54,29,Female,Medium
+452,Banjara Hills,Residential Area,17.394807,78.490415,Vandalism,2025-11-19,15:17:54,57,Female,High
+453,Banjara Hills,Market,17.388117,78.492732,Theft,2025-10-10,07:06:54,42,Female,High
+454,Ameerpet,Mall,17.386054,78.495872,Burglary,2026-02-18,16:53:54,48,Male,High
+455,Ameerpet,Mall,17.393394,78.495304,Robbery,2025-11-14,04:22:54,33,Male,Low
+456,Gachibowli,Market,17.384369,78.496847,Theft,2025-11-01,02:10:54,63,Male,Low
+457,Gachibowli,Market,17.375737,78.49126,Theft,2026-02-07,13:32:54,34,Female,Medium
+458,Ameerpet,Street,17.365143,78.468543,Vandalism,2025-10-19,21:12:54,38,Female,Low
+459,Secunderabad,Market,17.37734,78.488085,Robbery,2025-11-30,01:57:54,33,Female,Medium
+460,Gachibowli,Mall,17.383059,78.485998,Theft,2025-10-31,14:09:54,48,Male,Low
+461,Banjara Hills,Park,17.388705,78.484206,Robbery,2025-08-30,17:12:54,42,Male,Low
+462,Gachibowli,Bus Stop,17.39217,78.489708,Assault,2025-09-22,15:44:54,39,Female,High
+463,Madhapur,Mall,17.390919,78.501666,Vandalism,2026-02-13,21:32:54,63,Female,Low
+464,Secunderabad,Bus Stop,17.378594,78.488857,Assault,2025-11-01,22:30:54,33,Male,Medium
+465,Banjara Hills,Residential Area,17.37048,78.474508,Robbery,2025-12-27,04:50:54,48,Female,Low
+466,Madhapur,Residential Area,17.385898,78.502393,Theft,2025-12-07,15:47:54,24,Female,Low
+467,Gachibowli,Street,17.377538,78.494648,Assault,2026-01-02,19:07:54,28,Female,Medium
+468,Secunderabad,Park,17.393882,78.491138,Vandalism,2026-01-18,20:04:54,31,Male,High
+469,Gachibowli,Residential Area,17.386624,78.495646,Burglary,2025-11-15,14:35:54,43,Female,High
+470,Secunderabad,Market,17.376506,78.495412,Burglary,2026-01-05,23:02:54,29,Female,Low
+471,Banjara Hills,Street,17.387392,78.488624,Vandalism,2025-12-25,06:13:54,26,Female,High
+472,Gachibowli,Street,17.377952,78.490421,Vandalism,2025-11-03,12:24:54,22,Male,Medium
+473,Madhapur,Street,17.403984,78.497748,Theft,2025-10-31,08:26:54,34,Female,Low
+474,Banjara Hills,Residential Area,17.379713,78.491398,Theft,2025-10-20,07:24:54,56,Female,Medium
+475,Ameerpet,Park,17.391162,78.489665,Vandalism,2025-11-02,05:15:54,62,Male,High
+476,Banjara Hills,Park,17.379422,78.491412,Theft,2025-09-14,18:05:54,27,Male,Medium
+477,Gachibowli,Park,17.375032,78.49155,Assault,2026-02-26,08:21:54,46,Female,Medium
+478,Banjara Hills,Residential Area,17.38906,78.491791,Vandalism,2025-11-17,15:13:54,57,Male,High
+479,Banjara Hills,Residential Area,17.383144,78.492462,Vandalism,2026-01-11,16:54:54,52,Male,Medium
+480,Ameerpet,Mall,17.380232,78.48126,Vandalism,2025-09-27,00:48:54,46,Male,Low
+481,Banjara Hills,Street,17.380618,78.492508,Theft,2025-12-01,22:53:54,52,Female,Medium
+482,Banjara Hills,Residential Area,17.376714,78.496077,Burglary,2026-01-03,18:50:54,28,Male,Medium
+483,Gachibowli,Market,17.376969,78.495198,Robbery,2025-09-26,20:07:54,58,Female,Medium
+484,Gachibowli,Street,17.397011,78.496611,Assault,2026-01-28,06:38:54,23,Male,Low
+485,Madhapur,Mall,17.390351,78.493799,Assault,2026-01-01,03:12:54,63,Female,High
+486,Secunderabad,Bus Stop,17.388979,78.493382,Robbery,2026-02-21,23:13:54,36,Female,High
+487,Madhapur,Mall,17.383117,78.493064,Assault,2025-12-13,00:34:54,40,Male,Medium
+488,Secunderabad,Bus Stop,17.377533,78.488275,Theft,2025-10-17,06:03:54,35,Female,Medium
+489,Secunderabad,Park,17.378391,78.46853,Burglary,2025-11-05,09:03:54,49,Female,Low
+490,Banjara Hills,Park,17.392299,78.491485,Robbery,2026-01-12,14:31:54,37,Male,High
+491,Secunderabad,Mall,17.386884,78.493328,Assault,2025-09-04,22:01:54,51,Male,High
+492,Secunderabad,Street,17.37625,78.490983,Theft,2025-09-12,22:06:54,49,Male,Medium
+493,Secunderabad,Bus Stop,17.38647,78.496263,Theft,2026-02-06,23:25:54,24,Male,High
+494,Madhapur,Residential Area,17.388775,78.492284,Theft,2025-12-12,14:57:54,47,Male,High
+495,Gachibowli,Mall,17.381226,78.489006,Vandalism,2025-10-25,16:57:54,45,Female,Medium
+496,Ameerpet,Market,17.375048,78.498685,Theft,2025-12-26,22:17:54,28,Female,Low
+497,Gachibowli,Street,17.378659,78.494616,Robbery,2025-09-11,23:25:54,29,Female,Medium
+498,Gachibowli,Residential Area,17.380425,78.496441,Vandalism,2025-09-14,04:59:54,40,Male,Medium
+499,Banjara Hills,Street,17.381171,78.495325,Burglary,2025-08-31,10:14:54,61,Female,Medium
+500,Gachibowli,Park,17.393336,78.475925,Vandalism,2025-10-23,05:22:54,51,Female,Low

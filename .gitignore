@@ -1,0 +1,45 @@
+# System Files
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Backend (Python)
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.venv/
+backend/venv/
+backend/env/
+backend/ENV/
+backend/models/*.joblib
+backend/*.db
+backend/*.log
+backend/static/reports/*.pdf
+
+# Frontend (Node/React)
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+frontend/.env
+frontend/.env.*
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# Dataset/Temp Files
+*.csv
+!test_india_crimes.csv
+/tmp/
+.gemini/
+.agents/

@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0b;
+  --surface: #161618;
+  --border: #27272a;
+}
+
+body {
+  @apply bg-background text-white antialiased;
+}
+
+/* Glassmorphism utility */
+.glass {
+  @apply bg-surface/80 backdrop-blur-xl border border-white/10;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
+}
+
+.leaflet-container {
+  @apply w-full h-full rounded-2xl border border-white/10;
+  background: var(--background) !important;
+}
+
+/* Map specific styling for dark mode */
+.leaflet-tile-pane {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
