@@ -1,6 +1,13 @@
-from sqlalchemy import Column, Integer, String, Float, Date, Time, Index
-from geoalchemy2 import Geometry
+from sqlalchemy import Column, Integer, String, Float, Date, Time
 from database import Base
+
+# Geometry support is optional — only available when PostGIS + geoalchemy2 is installed
+try:
+    from geoalchemy2 import Geometry
+    _GEOM_AVAILABLE = True
+except ImportError:
+    _GEOM_AVAILABLE = False
+    Geometry = None
 
 class Crime(Base):
     __tablename__ = "crimes"
@@ -10,7 +17,6 @@ class Crime(Base):
     place_type = Column(String)
     latitude = Column(Float)
     longitude = Column(Float)
-    geom = Column(Geometry(geometry_type='POINT', srid=4326))
     crime_type = Column(String)
     crime_date = Column(Date)
     crime_time = Column(Time)
@@ -18,6 +24,5 @@ class Crime(Base):
     victim_gender = Column(String)
     risk_zone = Column(String)
 
-# Spatial index is automatically handled by GeoAlchemy2 if declared correctly, 
-# but we can explicitly define it for clarity or performance tuning.
-# Index('idx_crimes_geom', Crime.geom, postgresql_using='gist')
+if _GEOM_AVAILABLE:
+    Crime.geom = Column(Geometry(geometry_type='POINT', srid=4326))

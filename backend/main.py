@@ -46,19 +46,23 @@ ml_engine = MLEngine()
 
 class DataStore:
     def __init__(self):
-        self.use_db = True
-        try:
-            Base.metadata.create_all(bind=engine)
-            db = SessionLocal()
-            db.execute(text("SELECT 1"))
-            db.close()
-        except:
-            print("Database connection failed. Switching to In-Memory Mode.")
-            self.use_db = False
-            self.memory_data = []
+        self.memory_data = []
+        self.use_db = (engine is not None and SessionLocal is not None)
+        if self.use_db:
+            try:
+                Base.metadata.create_all(bind=engine)
+                db = SessionLocal()
+                db.execute(text("SELECT 1"))
+                db.close()
+                print("DataStore: Connected to PostgreSQL")
+            except Exception as e:
+                print(f"DataStore: DB check failed ({e}). Switching to In-Memory Mode.")
+                self.use_db = False
+        else:
+            print("DataStore: Running in In-Memory Mode (no DB configured)")
 
     def get_crimes(self):
-        if self.use_db:
+        if self.use_db and SessionLocal:
             db = SessionLocal()
             try:
                 crimes = db.query(Crime).all()
@@ -70,11 +74,13 @@ class DataStore:
         return {c.name: getattr(obj, c.name) for c in obj.__table__.columns if c.name != 'geom'}
 
     def seed(self):
-        if self.use_db:
+        if self.use_db and SessionLocal:
             db = SessionLocal()
-            if db.query(Crime).count() == 0:
-                seed_database(db, n=1000)
-            db.close()
+            try:
+                if db.query(Crime).count() == 0:
+                    seed_database(db, n=1000)
+            finally:
+                db.close()
         else:
             if not self.memory_data:
                 from data_utils import generate_mock_data
@@ -82,17 +88,18 @@ class DataStore:
                 self.memory_data = [{**d, "crime_id": i} for i, d in enumerate(raw_data)]
 
     def add_crimes(self, df, clear=True):
-        # Keep only columns that exist in the Crime table
         valid_cols = ["area_name", "place_type", "latitude", "longitude", "crime_type", "crime_date", "crime_time", "victim_age", "victim_gender", "risk_zone"]
         df_filtered = df[[c for c in df.columns if c in valid_cols]]
-        
-        if self.use_db:
+
+        if self.use_db and SessionLocal:
+            from data_utils import _GEOM_AVAILABLE, WKTElement
             db = SessionLocal()
             try:
                 if clear: db.query(Crime).delete()
                 for _, row in df_filtered.iterrows():
                     crime = Crime(**row.to_dict())
-                    crime.geom = WKTElement(f'POINT({row["longitude"]} {row["latitude"]})', srid=4326)
+                    if _GEOM_AVAILABLE and WKTElement:
+                        crime.geom = WKTElement(f'POINT({row["longitude"]} {row["latitude"]})', srid=4326)
                     db.add(crime)
                 db.commit()
             finally: db.close()

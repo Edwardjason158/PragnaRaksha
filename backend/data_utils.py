@@ -4,7 +4,13 @@ from datetime import datetime, timedelta
 import random
 from sqlalchemy.orm import Session
 from models import Crime
-from geoalchemy2 import WKTElement
+
+try:
+    from geoalchemy2 import WKTElement
+    _GEOM_AVAILABLE = True
+except ImportError:
+    _GEOM_AVAILABLE = False
+    WKTElement = None
 
 CRIME_TYPES = [
     "Theft", "Robbery", "Assault", "Burglary", "Vandalism", 
@@ -53,8 +59,9 @@ def generate_mock_data(n=1000):
 def seed_database(db: Session, n=10000):
     mock_data = generate_mock_data(n)
     for item in mock_data:
-        crime = Crime(**item)
-        crime.geom = WKTElement(f'POINT({item["longitude"]} {item["latitude"]})', srid=4326)
+        crime = Crime(**{k: v for k, v in item.items()})
+        if _GEOM_AVAILABLE and WKTElement:
+            crime.geom = WKTElement(f'POINT({item["longitude"]} {item["latitude"]})', srid=4326)
         db.add(crime)
     db.commit()
 
