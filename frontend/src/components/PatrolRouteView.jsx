@@ -26,6 +26,7 @@ const PatrolRouteView = () => {
     const [nHotspots, setNHotspots] = useState(5);
     const [nOfficers, setNOfficers] = useState(2);
     const [loading, setLoading] = useState(false);
+    const [exporting, setExporting] = useState(false);
 
     const fetchRoute = async () => {
         setLoading(true);
@@ -36,6 +37,30 @@ const PatrolRouteView = () => {
             console.error(err);
         } finally {
             setLoading(false);
+        }
+    };
+
+    const handleExportPDF = async () => {
+        setExporting(true);
+        try {
+            const res = await axios.get(
+                `/api/patrol-route/export?n_hotspots=${nHotspots}&n_officers=${nOfficers}`,
+                { responseType: 'blob' }
+            );
+            const blob = new Blob([res.data], { type: 'application/pdf' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'patrol_briefing.pdf';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            a.remove();
+        } catch (err) {
+            console.error('PDF export failed:', err);
+            alert('Failed to export PDF. Please try again.');
+        } finally {
+            setExporting(false);
         }
     };
 
@@ -155,11 +180,21 @@ const PatrolRouteView = () => {
                             </div>
 
                             <button
-                                onClick={() => window.open(`/api/patrol-route/export?n_hotspots=${nHotspots}&n_officers=${nOfficers}`, '_blank')}
-                                className="w-full mt-6 py-3 bg-white/5 hover:bg-white/10 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 border border-white/5"
+                                onClick={handleExportPDF}
+                                disabled={exporting}
+                                className="w-full mt-6 py-3 bg-white/5 hover:bg-white/10 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 border border-white/5 disabled:opacity-50"
                             >
-                                <Download className="w-3 h-3" />
-                                Export PDF Briefing
+                                {exporting ? (
+                                    <>
+                                        <div className="w-3 h-3 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                                        Generating...
+                                    </>
+                                ) : (
+                                    <>
+                                        <Download className="w-3 h-3" />
+                                        Export PDF Briefing
+                                    </>
+                                )}
                             </button>
                         </div>
                     ))}

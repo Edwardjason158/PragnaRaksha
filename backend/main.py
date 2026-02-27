@@ -252,7 +252,12 @@ def export_patrol_route(n_hotspots: int = 5, n_officers: int = 1):
     # Save to temp file
     with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
         pdf.output(tmp.name)
-        return FileResponse(tmp.name, filename="patrol_briefing.pdf")
+        return FileResponse(
+            tmp.name,
+            filename="patrol_briefing.pdf",
+            media_type="application/pdf",
+            headers={"Content-Disposition": "attachment; filename=patrol_briefing.pdf"}
+        )
 def get_accuracy():
     # Return last trained accuracy or retrain
     return {"f1_score": 0.88, "status": "Stable"}

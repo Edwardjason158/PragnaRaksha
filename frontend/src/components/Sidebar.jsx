@@ -8,7 +8,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
         { id: 'patrol', label: 'Patrol Optimizer', icon: Route },
         { id: 'analytics', label: 'Deep Analytics', icon: BarChart3 },
         { id: 'upload', label: 'Data Intake', icon: Upload },
-        { id: 'xai', label: 'Explainable AI', icon: ShieldAlert },
+        // { id: 'xai', label: 'Explainable AI', icon: ShieldAlert },
     ];
 
     return (
