@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Polyline, Marker, Popup, useMap } from 'react-leaflet';
-import axios from 'axios';
+import axios from '../api';
 import { Download, Navigation, Clock, Shield } from 'lucide-react';
 
 const MapController = ({ routes }) => {

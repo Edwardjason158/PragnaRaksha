@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Upload, FileText, CheckCircle2, AlertCircle, X } from 'lucide-react';
-import axios from 'axios';
+import axios from '../api';
 
 const UploadView = () => {
     const [file, setFile] = useState(null);

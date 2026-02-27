@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet.heat';
-import axios from 'axios';
+import axios from '../api';
 
 const HeatLayer = ({ points }) => {
     const map = useMap();

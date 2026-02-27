@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: pragnaraksha-backend
+    runtime: python
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    rootDir: backend
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: DATABASE_URL
+        value: ""         # Leave empty to use in-memory fallback
+      - key: REDIS_HOST
+        value: ""         # Leave empty to use in-memory fallback
+      - key: SECRET_KEY
+        generateValue: true
+    plan: free
